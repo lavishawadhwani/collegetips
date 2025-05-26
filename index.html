@@ -15,15 +15,15 @@
 </head>
 <body class="bg-gray-100">
 
-  <!-- Filter Bar -->
+   
   <div class="w-full px-4 py-6 flex items-center justify-between sticky top-0 z-10" style="background-color: olive;">
-    <!-- Logo + Title -->
+     
     <div class="flex items-center gap-2">
       <img src="images/logo.webp" alt="CollegeTips Logo" class="w-8 h-8" />
       <span class="font-bold text-lg text-white">CollegeTips.in</span>
     </div>
 
-    <!-- Filter Buttons -->
+     
     <div class="flex gap-2 flex-wrap">
       <button class="filter-btn px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800" data-category="all">All</button>
       <button class="filter-btn px-4 py-2 bg-gray-200 text-black rounded-full hover:bg-gray-300" data-category="team">Team</button>
@@ -34,7 +34,7 @@
     </div>
   </div>
 
-  <!-- Gallery Grid -->
+  
   <div class="gallery px-4 py-6 columns-1 sm:columns-2 md:columns-3 gap-4">
      
     <div class="gallery-item group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="team">
@@ -175,7 +175,7 @@
       viewer.classList.add('hidden');
     }
 
-    // Optional: Close on ESC key
+     
     window.addEventListener('keydown', e => {
       if (e.key === 'Escape') closeFullscreen();
     });
@@ -186,7 +186,7 @@
     button.addEventListener('click', () => {
       const selectedCategory = button.getAttribute('data-category');
 
-      // Change button styles
+       
       filterButtons.forEach(btn => {
         btn.classList.remove('bg-black', 'text-white');
         btn.classList.add('bg-gray-200', 'text-black');
@@ -194,7 +194,7 @@
       button.classList.add('bg-black', 'text-white');
       button.classList.remove('bg-gray-200', 'text-black');
 
-      // Show/Hide items
+       
       galleryItems.forEach(item => {
         const itemCategory = item.getAttribute('data-category');
 
