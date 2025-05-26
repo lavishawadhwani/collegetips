@@ -1,0 +1,213 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CollegeTips Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-item {
+      transition: opacity 0.3s ease;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Filter Bar -->
+  <div class="w-full px-4 py-6 flex items-center justify-between sticky top-0 z-10" style="background-color: olive;">
+    <!-- Logo + Title -->
+    <div class="flex items-center gap-2">
+      <img src="images/logo.webp" alt="CollegeTips Logo" class="w-8 h-8" />
+      <span class="font-bold text-lg text-white">CollegeTips.in</span>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="flex gap-2 flex-wrap">
+      <button class="filter-btn px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800" data-category="all">All</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 text-black rounded-full hover:bg-gray-300" data-category="team">Team</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 text-black rounded-full hover:bg-gray-300" data-category="campaign">Campaign</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 text-black rounded-full hover:bg-gray-300" data-category="fun">Fun</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 text-black rounded-full hover:bg-gray-300" data-category="bts">BTS</button>
+      <button class="filter-btn px-4 py-2 bg-gray-200 text-black rounded-full hover:bg-gray-300" data-category="festivities">Festivities</button>
+    </div>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery px-4 py-6 columns-1 sm:columns-2 md:columns-3 gap-4">
+     
+    <div class="gallery-item group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="team">
+      <img src="images/team/team.jpg.jpeg" alt="Team 1" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Team
+      </div>
+    </div>
+
+    
+    <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="campaign">
+      <img src="images/campaign/camp.jpg.jpeg" alt="Campaign 1" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Campaign
+      </div>
+    </div>
+
+     
+    <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="fun">
+      <img src="images/fun/fun.jpg.jpeg" alt="Fun 1" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Fun
+      </div>
+    </div>
+   
+
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="bts">
+      <img src="images/bts/bts.jpg.jpeg" alt="BTS 1" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        BTS
+      </div>
+    </div>
+   
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="festivities">
+      <img src="images/festivities/festivities.jpg.jpeg" alt="Festivities 1" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Festivities
+      </div>
+    </div>
+  
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="team">
+      <img src="images/team/team2.jpg.jpeg" alt="Team 2" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Team
+      </div>
+    </div>
+   
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="campaign">
+      <img src="images/campaign/camp2.jpg.jpeg" alt="Camp 2" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Campaign
+      </div>
+    </div>
+   
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="fun">
+      <img src="images/fun/fun2.jpg.jpeg" alt="Fun 2" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Fun
+      </div>
+    </div>
+   
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="bts">
+      <img src="images/bts/bts2.jpg.jpeg" alt="BTS 2" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        BTS
+      </div>
+    </div>
+  
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="festivities">
+      <img src="images/festivities/festivities2.jpg.jpeg" alt="Festivities 2" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Festivities
+      </div>
+    </div>
+   
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="team">
+      <img src="images/team/team3.jpg.jpeg" alt="Team 3" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Team
+      </div>
+    </div>
+   
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="campaign">
+      <img src="images/campaign/camp3.jpg.jpeg" alt="Camp 3" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Campaign
+      </div>
+    </div>
+   
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="fun">
+      <img src="images/fun/fun3.jpg.jpeg" alt="Fun 3" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Fun
+      </div>
+    </div>
+   
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="bts">
+      <img src="images/bts/bts3.jpg.jpeg" alt="BTS 3" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        BTS
+      </div>
+    </div>
+   
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="festivities">
+      <img src="images/festivities/festivities3.jpg.jpeg" alt="Festivities 3" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Festivities
+      </div>
+    </div>
+   
+  <div class="gallery-item  group mb-6 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 transform hover:scale-105" data-category="campaign">
+      <img src="images/campaign/camp4.jpg.jpeg" alt="Camp 4" class="w-full rounded" />
+      <div class="category-label absolute bottom-2 left-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-xs opacity-0 hover:opacity-100 transition-opacity">
+        Campaign
+      </div>
+    </div>
+  </div>
+ 
+    <!-- Fullscreen Viewer -->
+ <div id="fullscreen-viewer" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden">
+    <img id="fullscreen-img" src="" class="max-w-full max-h-full rounded-lg" />
+    <button onclick="closeFullscreen()" class="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
+  </div>
+
+   <script>
+    const images = document.querySelectorAll('.gallery-item img');
+    const viewer = document.getElementById('fullscreen-viewer');
+    const viewerImg = document.getElementById('fullscreen-img');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        viewer.classList.remove('hidden');
+        viewerImg.src = img.src;
+      });
+    });
+
+    function closeFullscreen() {
+      viewer.classList.add('hidden');
+    }
+
+    // Optional: Close on ESC key
+    window.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeFullscreen();
+    });
+    const filterButtons = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedCategory = button.getAttribute('data-category');
+
+      // Change button styles
+      filterButtons.forEach(btn => {
+        btn.classList.remove('bg-black', 'text-white');
+        btn.classList.add('bg-gray-200', 'text-black');
+      });
+      button.classList.add('bg-black', 'text-white');
+      button.classList.remove('bg-gray-200', 'text-black');
+
+      // Show/Hide items
+      galleryItems.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+
+        if (selectedCategory === 'all' || itemCategory === selectedCategory) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+  </script>
+
+
+</body>
+</html>
